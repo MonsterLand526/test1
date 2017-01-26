@@ -14,9 +14,7 @@ download<-function(stock, from = "2010-01-01"){
   write.zoo(df,file=paste(stock,".csv",sep=""),sep=",",quote=FALSE)
 }
 
-read<-function(stock){
-  as.xts(read.zoo(file=paste(stock,".csv",sep=""), header = TRUE, sep=",", format = "%Y-%m-%d"))
-}
+
 
 
 
